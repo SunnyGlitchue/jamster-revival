@@ -1,9 +1,12 @@
+// page stuff ok
+
 document.addEventListener("DOMContentLoaded", () => {
   const products = Array.from(document.querySelectorAll(".product"));
   const perPage = 10;
   const pages = Math.ceil(products.length / perPage);
 
   const pagination = document.querySelector(".pagination");
+  const searchInput = document.getElementById("searchInput");
 
   function showPage(page) {
     const start = (page - 1) * perPage;
@@ -12,8 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
     products.forEach((p, i) => {
       if (i >= start && i < end) {
         p.classList.remove("is-hidden");
+        p.style.display = "flex";
       } else {
         p.classList.add("is-hidden");
+        p.style.display = "none";
       }
     });
 
@@ -30,5 +35,31 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     const page = Array.from(pagination.querySelectorAll(".page")).indexOf(btn) + 1;
     showPage(page);
+  });
+
+// search bar stuff ok
+
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase();
+    const isSearching = query.length > 0;
+
+    products.forEach(product => {
+      const title = product.querySelector("h3").textContent.toLowerCase();
+      const artist = product.querySelector("p").textContent.toLowerCase();
+      const match = title.includes(query) || artist.includes(query);
+
+      if (isSearching) {
+        product.classList.remove("is-hidden");
+        product.style.display = match ? "flex" : "none";
+      } else {
+        product.style.display = "flex";
+      }
+    });
+
+    pagination.style.display = isSearching ? "none" : "flex";
+
+    if (!isSearching) {
+      showPage(1);
+    }
   });
 });
