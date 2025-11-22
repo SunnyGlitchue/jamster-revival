@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schnuffel – Jamster</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="jamster-theme">
+
+<header class="jamster-header">
+  <div class="logo">
+     <img src="../assets/logo.png" alt="Jamster logo" width="180" />
+  </div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="../ringtones.html">Ringtones</a></li>
+      <li><a href="../games.html">Games</a></li>
+      <li><a href="../apps.html">Apps</a></li>
+      <li><a href="../videos.html">Videos</a></li>
+      <li><a href="../graphics.html">Graphics</a></li>
+      <li><a href="https://discord.gg/ASpDSDEqU2">Discord</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="jamster-main">
+
+  <section class="jamster-box">
+    <h2>Schnuffel</h2>
+
+<div class="product" style="align-items:flex-start; padding:20px;">
+  <img src="https://web.archive.org/web/20110308024417im_/http://musicdelivery.jamba.net/storage/music/artwork/01/view/000/008/895/478/4/j-/9345988/Schnuffel.jpg" 
+       alt="Crazy Cow" style="width:120px;height:120px;">
+  
+  <div class="info">
+    <h3>About this artist</h3>
+    <p id="artist-description" class="collapsed" style="color:#ccc;margin-top:8px;max-width:600px;">
+      Follow him on <a href="https://twitter.com/Schnuffel_Fans" target="_blank">Twitter</a> 
+<br><br>
+     The animated cartoon bunny Schnuffel also called Snuggle scored a chart-topping hit single in the German-language world in 2008 with "Kuschel Song" (in English, "Snuggle Song"), an adorably cute ode to his carrot. Conceived by Jamba!, the same Berlin-based mobile phone content provider that gave life to the Crazy Frog phenomenon, the animated cartoon bunny proved so popular -- for instance, hitting number one in Germany and Austria and number two in Switzerland -- that Sony BMG released a full-length Schnuffel album, Ich Hab' Dich Lieb (2008), and also marketed "Kuschel Song" internationally, translating the song into languages including English, Spanish, and Dutch.
+    </p>
+    <button id="toggle-btn" class="button">See more...</button>
+  </div>
+</div>
+
+  <section class="jamster-box">
+    <h2>Ringtones</h2>
+
+    <div class="product-list">
+
+      <article class="product">
+        <img src="../assets/covers/schnuffel-kuschelsong.png" alt="">
+        <div class="info">
+          <h3>Kuschel Song</h3>
+          <p>Schnuffel</p>
+        </div>
+        <a href="../music-page/kuschel-song.html" class="button">Get It</a>
+      </article>
+
+        <article class="product">
+        <img src="../assets/covers/schnuffel-ichhabdichlieb.png" alt="">
+        <div class="info">
+          <h3>Ich hab' dich lieb</h3>
+          <p>Schnuffel</p>
+        </div>
+        <a href="../music-page/ich-hab-dich-lieb.html" class="button">Get It</a>
+      </article>
+
+        <article class="product">
+        <img src="../assets/covers/schnuffel-bunnyparty.png" alt="">
+        <div class="info">
+          <h3>Snufi Fiesta</h3>
+          <p>Snufi</p>
+        </div>
+        <a href="../music-page/snufi-fiesta.html" class="button">Get It</a>
+      </article>
+
+        <article class="product">
+        <img src="../assets/covers/schnuffel-tuttuttut.png" alt="">
+        <div class="info">
+          <h3>Tut, Tut, Tut</h3>
+          <p>Schnuffel</p>
+        </div>
+        <a href="../music-page/tut-tut-tut.html" class="button">Get It</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="jamster-box">
+    <h2>Videos</h2>
+
+    <div class="product-list">
+
+      <article class="product">
+        <img src="../assets/covers/schnuffel-kuschelsong.png" alt="">
+        <div class="info">
+          <h3>Kuschel Song</h3>
+          <p>Schnuffel</p>
+        </div>
+        <a href="../video-page/kuschel-song.html" class="button">Get It</a>
+      </article>
+
+        <article class="product">
+        <img src="../assets/covers/schnuffel-ichhabdichlieb.png" alt="">
+        <div class="info">
+          <h3>Ich hab' dich lieb</h3>
+          <p>Schnuffel</p>
+        </div>
+        <a href="../video-page/ich-hab-dich-lieb.html" class="button">Get It</a>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="jamster-footer">
+  <p>Compatible with AT&T, Verizon, T-Mobile, Virgin Mobile, Sprint.</p>
+  <p>© 2025 Sunny, LLC. All rights reserved.</p>
+</footer>
+
+<script>
+  const desc = document.getElementById("artist-description");
+  const btn = document.getElementById("toggle-btn");
+
+  btn.addEventListener("click", () => {
+    desc.classList.toggle("collapsed");
+    if (desc.classList.contains("collapsed")) {
+      btn.textContent = "See more...";
+    } else {
+      btn.textContent = "See less...";
+    }
+  });
+</script>
+
+</body>
+</html>

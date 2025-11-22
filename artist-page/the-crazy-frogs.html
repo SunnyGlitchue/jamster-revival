@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Crazy Frogs – Jamster</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="jamster-theme">
+
+<header class="jamster-header">
+  <div class="logo">
+     <img src="../assets/logo.png" alt="Jamster logo" width="180" />
+  </div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="../ringtones.html">Ringtones</a></li>
+      <li><a href="../games.html">Games</a></li>
+      <li><a href="../apps.html">Apps</a></li>
+      <li><a href="../videos.html">Videos</a></li>
+      <li><a href="../graphics.html">Graphics</a></li>
+      <li><a href="https://discord.gg/ASpDSDEqU2">Discord</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="jamster-main">
+
+  <section class="jamster-box">
+    <h2>The Crazy Frogs</h2>
+
+<div class="product" style="align-items:flex-start; padding:20px;">
+  <img src="https://web.archive.org/web/20110228150350im_/http://musicdelivery.jamba.net/storage/music/artwork/01/view/000/047/816/478/4/de/11861874/The_Crazy_Frogs.jpg" 
+       alt="The Crazy Frogs" style="width:120px;height:120px;">
+  
+  <div class="info">
+    <h3>About this artist</h3>
+    <p id="artist-description" class="collapsed" style="color:#ccc;margin-top:8px;max-width:600px;">
+      Follow them on <a href="https://www.facebook.com/TheCrazyFrogs" target="_blank">Facebook</a> 
+      and watch their hit <a href="https://www.youtube.com/watch?v=5fju_XcUhqo" target="_blank">The Ding Dong Song</a> 
+      on YouTube.<br><br>
+      Who are The Crazy Frogs? These two Frogs are more than just crazy! Ok, so one is crazier than the other, but none the less, they're ready to take the world by storm! With their stunning performance and a catchy beat you just can't resist to get crazy with them! Where do they come from? Frog Junior and Frog Senior are two funny buddies and actually relatives. Frog Senior is the sophisticated, experienced but still young-at-heart frog and his grandson Frog Junior, is total... buddies and actually relatives. Frog Senior is the sophisticated, experienced but still young-at-heart frog and his grandson Frog Junior, is totally crazy (but in a loveable sense). Even though they are not at all the same, they still have a lot in common: they understand each other across their generational differences and really like to get the party started. It really is a clash of two generations: Frog Senior doesn't even know or care what an MP3-Player is, and in return, Frog Junior has never heard of a gramophone - or knows exactly what those old things are called. You know...that thing you can play huge black CDs on? Well anyways, no matter if you're young or old you still want to be the best. And of course these two always have some competition between them. Frog Junior who's fresh out of the pond with modern, new- school dance moves tries to convince Frog Senior, from the older generation, that experience isn't everything! Frog Senior totally relies on his old-school, all-knowing nature what and where he can score and still be cool. But in the end, they can laugh about it together and enjoy each other's company - and dance moves. Frog Junior and Frog Senior just love making music and singing - anytime, anywhere. Their first hit combines old-school swing with a club hit ambition. Dancing like crazy, they both show the world, that age doesn't matter and you can always find something fun to do together. And who would say that being just a tiny bit annoyed by one the other one can't be likable, too - especially when it's all in the family as grandson and grandfather. So, let's see who wins the battle of coolness between these two generations!
+    </p>
+    <button id="toggle-btn" class="button">See more...</button>
+  </div>
+</div>
+
+  <section class="jamster-box">
+    <h2>Ringtones</h2>
+
+    <div class="product-list">
+
+      <article class="product">
+        <img src="https://sunnyglitchue.github.io/jamster-revival/assets/covers/thecrazyfrogs-dingdongsong.png" alt="">
+        <div class="info">
+          <h3>The Ding Dong Song</h3>
+          <p>The Crazy Frogs</p>
+        </div>
+        <a href="../music-page/the-ding-dong-song.html" class="button">Get It</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="jamster-box">
+    <h2>Videos</h2>
+
+    <div class="product-list">
+
+      <article class="product">
+        <img src="https://sunnyglitchue.github.io/jamster-revival/assets/covers/thecrazyfrogs-dingdongsong.png" alt="">
+        <div class="info">
+          <h3>The Ding Dong Song</h3>
+          <p>The Crazy Frogs</p>
+        </div>
+        <a href="../video-page/the-ding-dong-song.html" class="button">Get It</a>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="jamster-footer">
+  <p>Compatible with AT&T, Verizon, T-Mobile, Virgin Mobile, Sprint.</p>
+  <p>© 2025 Sunny, LLC. All rights reserved.</p>
+</footer>
+
+<script>
+  const desc = document.getElementById("artist-description");
+  const btn = document.getElementById("toggle-btn");
+
+  btn.addEventListener("click", () => {
+    desc.classList.toggle("collapsed");
+    if (desc.classList.contains("collapsed")) {
+      btn.textContent = "See more...";
+    } else {
+      btn.textContent = "See less...";
+    }
+  });
+</script>
+
+</body>
+</html>

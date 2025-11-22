@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crazy Cow – Jamster</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="jamster-theme">
+
+<header class="jamster-header">
+  <div class="logo">
+     <img src="../assets/logo.png" alt="Jamster logo" width="180" />
+  </div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="../ringtones.html">Ringtones</a></li>
+      <li><a href="../games.html">Games</a></li>
+      <li><a href="../apps.html">Apps</a></li>
+      <li><a href="../videos.html">Videos</a></li>
+      <li><a href="../graphics.html">Graphics</a></li>
+      <li><a href="https://discord.gg/ASpDSDEqU2">Discord</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="jamster-main">
+
+  <section class="jamster-box">
+    <h2>Crazy Cow</h2>
+
+<div class="product" style="align-items:flex-start; padding:20px;">
+  <img src="https://static.wikitide.net/jamsterwikiwiki/9/9a/335749-wewishyouamerryxmas-crazybabycow.jpg" 
+       alt="Crazy Cow" style="width:120px;height:120px;">
+  
+  <div class="info">
+    <h3>About this artist</h3>
+    <p id="artist-description" class="collapsed" style="color:#ccc;margin-top:8px;max-width:600px;">
+      Follow her on <a href="https://www.youtube.com/channel/UCg70deYG3wBeMJGmlcJ7ZRQ" target="_blank">Youtube</a> 
+<br><br>
+      You might wonder, who is the Crazy Cow?, it's simple, The amazing Crazy Cow is the top #1 craziest cow in the world, she is very hyperactive and it's impossible to shut her, it's a nightmare being with her! she can be in America, then in Africa, then in Europe, it can always be unexpected where she is! Also, she can sing any song she likes, such as her own hit song I like to Muh, Muh! or Sir-Mix-A-Lot's Baby Got BACK! Song, she considers this song EPIC and dedicated a cover to this song, get this VERY CRAZY cow on your mobile phone!
+    </p>
+    <button id="toggle-btn" class="button">See more...</button>
+  </div>
+</div>
+
+  <section class="jamster-box">
+    <h2>Ringtones</h2>
+
+    <div class="product-list">
+
+      <article class="product">
+        <img src="../assets/covers/crazycow-muhmuh.png" alt="">
+        <div class="info">
+          <h3>I Like To Muh, Muh!</h3>
+          <p>Crazy Cow</p>
+        </div>
+        <a href="../music-page/i-like-to-muh-muh.html" class="button">Get It</a>
+      </article>
+
+      <article class="product">
+        <img src="../assets/covers/crazycow-babygotback.png" alt="">
+        <div class="info">
+          <h3>Baby Got Back</h3>
+          <p>Crazy Cow</p>
+        </div>
+        <a href="../music-page/baby-got-back.html" class="button">Get It</a>
+      </article>
+
+      <article class="product">
+        <img src="../assets/covers/crazycow-handsup2010.png" alt="">
+        <div class="info">
+          <h3>Hands Up 2010</h3>
+          <p>Crazy Cow</p>
+        </div>
+        <a href="../music-page/hands-up-2010.html" class="button">Get It</a>
+      </article>
+
+      <article class="product">
+        <img src="../assets/covers/crazycow-porquenotecallas.png" alt="">
+        <div class="info">
+          <h3>¿Por qué no te callas?</h3>
+          <p>La Vaca Loca</p>
+        </div>
+        <a href="../music-page/porque-no-te-callas.html" class="button">Get It</a>
+      </article>
+
+      <article class="product">
+        <img src="../assets/covers/crazycow-babygotback.png" alt="">
+        <div class="info">
+          <h3>Baby Got Back (FR)</h3>
+          <p>Vache Folle</p>
+        </div>
+        <a href="../music-page/baby-got-back-fr.html" class="button">Get It</a>
+      </article>
+
+      <article class="product">
+        <img src="../assets/covers/crazycow-jinglemuh.png" alt="">
+        <div class="info">
+          <h3>Jingle Muh</h3>
+          <p>Crazy Cow</p>
+        </div>
+        <a href="../music-page/jingle-muh.html" class="button">Get It</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="jamster-box">
+    <h2>Videos</h2>
+
+    <div class="product-list">
+
+      <article class="product">
+        <img src="../assets/covers/crazycow-muhmuh.png" alt="">
+        <div class="info">
+          <h3>I Like To Muh, Muh!</h3>
+          <p>Crazy Cow</p>
+        </div>
+        <a href="../video-page/i-like-to-muh-muh.html" class="button">Get It</a>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="jamster-footer">
+  <p>Compatible with AT&T, Verizon, T-Mobile, Virgin Mobile, Sprint.</p>
+  <p>© 2025 Sunny, LLC. All rights reserved.</p>
+</footer>
+
+<script>
+  const desc = document.getElementById("artist-description");
+  const btn = document.getElementById("toggle-btn");
+
+  btn.addEventListener("click", () => {
+    desc.classList.toggle("collapsed");
+    if (desc.classList.contains("collapsed")) {
+      btn.textContent = "See more...";
+    } else {
+      btn.textContent = "See less...";
+    }
+  });
+</script>
+
+</body>
+</html>

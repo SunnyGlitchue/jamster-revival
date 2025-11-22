@@ -1,0 +1,367 @@
+body.jamster-theme {
+  background: #282b30;
+  color: #fff;
+  font-family: Cabin, sans-serif;
+  margin: 0;
+}
+
+.jamster-header {
+  background: #1e2124;
+  padding: 10px 20px;
+  border-bottom: 1px solid #333;
+  position: relative;
+}
+
+.jamster-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+.logo {
+  font-size: 16px;
+  color: rgba(246, 9, 71);
+  font-weight: bold;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.main-nav a {
+  color: rgba(246, 9, 71);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+.jamster-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.jamster-box {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.jamster-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.12), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+.jamster-box h2 {
+  border: 1px solid #131313;
+  font-size: 18px;
+  color: rgba(246, 9, 71);
+  border-bottom: 1px solid #333;
+  padding-bottom: 6px;
+}
+
+.product-list {
+  display: grid;
+  gap: 20px;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #111;
+  padding: 10px;
+  border: 1px solid #333;
+  position: relative;
+}
+
+.product::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.10), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+.product img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border: 1px solid #444;
+}
+
+.product .info h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.product .info p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.button {
+  margin-left: auto;
+  background: rgba(246, 9, 71);
+  color: #fff;
+  padding: 6px 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: rgba(216, 236, 236);
+}
+
+.artist-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.artist-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid #333;
+}
+
+.jamster-footer {
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+  padding: 20px;
+  border-top: 1px solid #333;
+  position: relative;
+}
+
+.jamster-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.10), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 8px;
+}
+
+.pagination .page {
+  padding: 8px 12px;
+  background: rgba(246, 9, 71);
+  color: #fff;
+  text-decoration: none;
+}
+
+.pagination .page:hover {
+  background: rgba(246, 9, 71);
+}
+
+.pagination .active {
+  background: #000;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.search-bar {
+  margin: 20px 0;
+  text-align: left;
+}
+
+#searchInput {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #131313;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.10), rgba(255,255,255,0));
+  color: #fff;
+  width: 80%;
+  max-width: 400px;
+}
+
+.artist-header-box {
+  background: #111;
+  padding: 20px;
+  border: 1px solid #333;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.artist-header-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.10), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+.artist-header-box img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 1px solid #444;
+}
+
+.artist-header-info h1 {
+  margin: 0;
+  color: rgba(246, 9, 71);
+  font-size: 26px;
+}
+
+.artist-header-info p {
+  margin-top: 6px;
+  margin-bottom: 0;
+  color: #ccc;
+}
+
+.artist-bio-box {
+  background: #111;
+  padding: 20px;
+  border: 1px solid #333;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.artist-bio-box h2 {
+  margin-top: 0;
+  color: rgba(246, 9, 71);
+  font-size: 20px;
+}
+
+.artist-bio-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.10), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+.tone-product {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #111;
+  padding: 12px;
+  border: 1px solid #333;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.tone-product::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.10), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+.tone-product img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 1px solid #444;
+}
+
+.tone-info h3 {
+  margin: 0;
+  color: #fff;
+}
+
+.tone-info audio {
+  margin-top: 6px;
+  width: 240px;
+}
+
+.tone-button {
+  margin-left: auto;
+  background: rgba(246, 9, 71);
+  padding: 6px 12px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tone-button:hover {
+  background: rgba(216, 236, 236);
+  color: #000;
+}
+
+.similar-artists-box {
+  background: #111;
+  padding: 20px;
+  border: 1px solid #333;
+  position: relative;
+}
+
+.similar-artists-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.10), rgba(255,255,255,0));
+}
+
+.similar-artists-box h2 {
+  color: rgba(246, 9, 71);
+  margin-top: 0;
+}
+
+#artist-description.collapsed {
+  max-height: 120px; 
+  overflow: hidden;
+  position: relative;
+}
+
+#artist-description.collapsed::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to top, #1a1a1a, transparent);
+}
+

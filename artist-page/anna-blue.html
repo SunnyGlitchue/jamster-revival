@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anna Blue – Jamster</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="jamster-theme">
+
+<header class="jamster-header">
+  <div class="logo">
+     <img src="../assets/logo.png" alt="Jamster logo" width="180" />
+  </div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="../ringtones.html">Ringtones</a></li>
+      <li><a href="../games.html">Games</a></li>
+      <li><a href="../apps.html">Apps</a></li>
+      <li><a href="../videos.html">Videos</a></li>
+      <li><a href="../graphics.html">Graphics</a></li>
+      <li><a href="https://discord.gg/ASpDSDEqU2">Discord</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="jamster-main">
+
+  <section class="jamster-box">
+    <h2>Anna Blue</h2>
+
+<div class="product" style="align-items:flex-start; padding:20px;">
+  <img src="https://web.archive.org/web/20110822192845im_/http://musicdelivery.jamba.net/storage/music/artwork/01/view/000/006/595/478/4/de_AT/10559560/Anna_Blue.jpg" 
+       alt="Anna Blue" style="width:120px;height:120px;">
+  
+  <div class="info">
+    <h3>About this artist</h3>
+    <p id="artist-description" class="collapsed" style="color:#ccc;margin-top:8px;max-width:600px;">
+I first discovered my love for music at 11. I was inspired mainly by Dashboard Confessional and the German band Tagtraum. Now I'm mainly into bands like Jimmy Eat World or Yellowcard. It all started in my room, I like to listen to music by myself especially the kind of music I really like with meaningful lyrics and heart-felt vocals. Some people might find my style a bit strange but I like to opening up my feelings and thoughts to others mainly through my music but also in other aspects of my style. I'm so proud and happy to have recorded my first song "So Sad". In my lyrics and my debut single I like to write about subjects like loneliness and searching for your place in the world. I would describe myself as an EMO girl and I crave two things: friendship and love!
+    </p>
+    <button id="toggle-btn" class="button">See more...</button>
+  </div>
+</div>
+
+  <section class="jamster-box">
+    <h2>Ringtones</h2>
+
+    <div class="product-list">
+
+      <article class="product">
+        <img src="../assets/covers/annablue-soallein.png" alt="">
+        <div class="info">
+          <h3>So Alone</h3>
+          <p>Anna Blue</p>
+        </div>
+        <a href="../music-page/so-alone.html" class="button">Get It</a>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="jamster-footer">
+  <p>Compatible with AT&T, Verizon, T-Mobile, Virgin Mobile, Sprint.</p>
+  <p>© 2025 Sunny, LLC. All rights reserved.</p>
+</footer>
+
+<script>
+  const desc = document.getElementById("artist-description");
+  const btn = document.getElementById("toggle-btn");
+
+  btn.addEventListener("click", () => {
+    desc.classList.toggle("collapsed");
+    if (desc.classList.contains("collapsed")) {
+      btn.textContent = "See more...";
+    } else {
+      btn.textContent = "See less...";
+    }
+  });
+</script>
+
+</body>
+</html>
